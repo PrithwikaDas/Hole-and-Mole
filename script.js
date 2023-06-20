@@ -84,10 +84,11 @@ function startGame() {
 
 // Function to update the score on clicking the mole
 function hitTheMole(e) {
-  if (!e.isTrusted) {
-    return;
-  }
+  //if (!e.isTrusted) {
+    //return;
+  //}
   score++;
+  console.log("Score is ", score)
   this.parentNode.classList.remove("up");
   scoreBoard.textContent = score;
 }
